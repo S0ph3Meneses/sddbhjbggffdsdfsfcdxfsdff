@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+	<title>SW</title>
+	<style>
+		table{
+			border-style:double;
+			border-width:4px;
+			border-color:rebeccapurple;
+		}
+	</style>
+</head>
+<body bgcolor="b7a6f2"> <center>
+<hr>
+<hr>
+<br>
+	<img src="https://img.freepik.com/premium-vector/doodle-simple-alarm-clock-sticker_653461-857.jpg?w=2000" width="300" height="300"style="border-style: double;">
+
+<table bgcolor="dbd4fc">
+<tr>
+<td width="350"><center>
+	<h3>MINUTES CONVERTER!</h3>
+
+	<input type="text" Id="id1" placeholder="Input Value"><br>
+	<input type="submit" value="Minutes to Seconds" onclick="Blorb()">
+	<input type="submit" value="Minutes to Hours" onclick="blorbo()">
+	<input type="submit" value="Minutes to Days" onclick="Blor()">
+	<p id="answer"></p>
+	<script>
+		function Blorb() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 * Number(60);
+			document.getElementById('answer').innerHTML = answer + " Seconds";
+		}
+	</script>
+
+	<script>
+		function blorbo() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 / Number(60);
+			document.getElementById('answer').innerHTML =  answer + " Hours";
+		}
+	</script>
+
+	<script>
+		function Blor() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 / Number(1440);
+			document.getElementById('answer').innerHTML = answer + " Days";
+		}
+	</script>
+</td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<hr>
+<hr>
+</body> </center>
+</html>
+	
